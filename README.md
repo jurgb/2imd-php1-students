@@ -1,9 +1,9 @@
 2imd-php1-students
 ==================
 
-Optional repository where students can contribute code to the PHP1 course.
-If you want to contribute code, please use the following naming conventions:
+Optional repository where students can contribute code to the PHP1 introduction course.
+Please create a new folder for each workshop week and a folder for each solution you want to contribute. 
 
-- week1-testyourself1.php
-- week2-testyourself1.php
-...
+See the existing structure for examples.
+
+Happy coding!
