@@ -1,0 +1,48 @@
+body
+{
+	background-color: #ecf0f1;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+nav
+{
+	margin: 0;
+}
+
+nav a
+{
+	display: block;
+	width: 20%;
+	padding: 2.5%;
+	float: left;
+	text-decoration: none;
+	background-color: #1abc9c;
+	color: #FFF;
+	text-align: center;
+}
+
+nav a.current
+{
+	background-color: #16a085;
+}
+
+.content, footer
+{
+	padding: 2.5%;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
