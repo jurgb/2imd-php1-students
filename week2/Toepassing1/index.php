@@ -11,29 +11,6 @@
 			return false;
 		}
 	}
-
-	if(!empty($_POST)) //als for niet leeg is
-	{
-		$username = $_POST['username'];
-		$password = $_POST['password'];
-
-		if(login($username,$password)) //check of user mag inloggen
-		{
-			session_start(); //sessie toewijzen aan user
-			$_SESSION['username'] = $username;
-
-			//doorverwijzen naar andere pagina
-			header("Location: toepassing1_loggedin.php");
-		}
-
-		else
-		{
-			echo "wrong pass or username";
-		}
-	}
-
-
-
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -47,17 +24,53 @@
 <body>
 
 
-<?php include('include_header.php'); ?>
+<section id="top">
+	<div class="wrapper">
+		<h1>INLOG FORMULIER</h1>
+	</div>
+</section>
 
 <div class="wrapper">
-	<form action="" method="post">
+<?php
+	if(!empty($_POST)) //als for niet leeg is
+	{
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+
+		if(login($username,$password)) //check of user mag inloggen
+		{
+			session_start(); //sessie toewijzen aan user
+			$_SESSION['username'] = $username;
+
+			//doorverwijzen naar andere pagina
+			echo "<h2> Hallo " . $_SESSION['username'] . "</h2>";
+			echo "<a href='logout.php'>" . "LOGOUT" . "</a>";
+		}
+
+		else
+		{
+			echo 'pass of username fout';
+		}
+	}
+?>
+</div>
+
+<div class="wrapper">
+	<form action="" method="post"
+		<?php
+			if(isset($_SESSION)) //als gebruiker is ingelogd, gaat display op none staan
+			{
+				echo "class='hidden'";
+			}
+
+		?>>
 		<p class="cf">
 			<label for="username">Username</label>
 			<input type="text" name="username">
 		</p>
 		<p class="cf">
 		<label for="password">Password</label>
-		<input type="text" name="password">
+		<input type="password" name="password">
 		</p>
 		<p class="cf">
 		<button type="sumbit">SIGN IN</button>
