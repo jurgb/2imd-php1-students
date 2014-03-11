@@ -1,0 +1,333 @@
+header
+{
+	width: 1000px;
+	height: 50px;
+	background-color: #45AADF;
+	margin: 50px auto 25px auto;
+}
+
+main
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+input
+{
+	border:none; box-shadow: none; margin:0; padding:0; 
+}
+
+header #companyName
+{
+	float: left;
+	margin-left: 25px;
+}
+
+header #companyName h1
+{
+	font-family: Helvetica Neue;
+	line-height: 50px;
+	font-size: 1.75em;
+	color: #FFF;
+}
+
+header #logIn
+{
+	float:right;
+	font-family: Helvetica Neue;
+	margin-top:12.5px;
+	margin-right:25px;
+}
+
+header #logIn input
+{height:20px;margin-right:2.5px;}
+
+header #logIn input[type="text"]
+{width:150px; padding-left:5px;}
+
+header #logIn input[type="submit"], header #logIn a
+{background-color:#3788B2;color:#FFF;height:25px; width:60px;}
+
+header #logIn input[type="submit"]
+{margin-left:5px;}
+
+header #logIn h1, header #logIn a
+{font-family: Helvetica Neue; float: left;}
+
+header #logIn h1
+{margin-top:2.5px; color: #FFF; margin-right: 10px;}
+
+header #logIn h1 span
+{font-weight:bold;}
+
+header #logIn a
+{
+	text-align: center;
+	text-decoration: none;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+#cartCon, #productCon
+{
+	float: left;
+	height: 700px;
+	
+}
+
+#cartCon
+{
+	width: 275px;
+	margin-right: 25px;
+	background-color: #FAFBFB;
+}
+
+#cartCon h1, #cartCon h3
+{
+	font-family: Helvetica Neue;
+	font-size: 1.05em;
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #F1F1F2;
+	color: #808284;
+	font-weight: bold;
+}
+
+#cartCon h3
+{font-weight: normal; border: none;}
+
+#cartCon input[type=submit]
+{
+	float:left;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Helvetica Neue;
+	font-size: 1em;
+	padding: 5px 7.5px;
+	border-radius: 40px;
+	border: 1px solid #45AADF;
+	color: #45AADF;
+	background-color: transparent;
+	cursor: pointer;
+	margin: 30px 0 25px 84px;
+}
+
+#cartCon input[type=submit]:hover, #productDetailCon input[type="submit"]:hover
+{
+	background-color: #45AADF;
+	color: #FFF;
+}
+
+#productCon, #productDetailCon
+{width: 700px;}
+
+#productCon ul li.productSec
+{
+	float: left;
+	width:216.66px;
+	height: auto;
+	margin: 0 25px 50px 0;
+}
+
+#productCon ul li.productSec:nth-child(3n)
+{margin-right: 0px;}
+
+li.productSec a, #productDetailCon h1
+{
+	font-family: Helvetica Neue;
+	font-size: 1em;
+	padding: 10px 0;
+	text-align: center;
+	color: #808284;
+	display: block;
+	text-decoration: none;
+}
+
+li.productSec a:hover
+{text-decoration: underline;}
+
+li.productSec img, #productDetailCon #detailImg img
+{
+	width: 100%;
+	height: auto;
+}
+
+li.productSec .desc
+{margin-top:2.5px;}
+
+li.productSec .desc .descPerc, li.productSec .desc .descAmount, li.productSec .desc .descPrice
+{
+	float: left;
+	width: 72.22px;
+	text-align: center;
+}
+
+li.productSec .desc .descPerc p, li.productSec .desc .descAmount p, li.productSec .desc .descPrice p
+{
+	font-family: Helvetica;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #808284;
+}
+
+#productDetailCon
+{float: left;}
+
+#productDetailCon #detailTitle
+{
+	height: 37px;
+	width: 100%;
+}
+
+#productDetailCon #detailTitle h1
+{
+	text-align: left;
+	float: left;
+	font-size: 1.5em;
+	line-height: 12.5px;
+}
+
+#productDetailCon #detailTitle a
+{
+	float: right;
+	color: #EF403E;
+	font-family: Helvetica Neue;
+	text-decoration: none;
+	line-height: 37px;
+}
+
+#productDetailCon #detailImg, #productDetailCon ul#detailDescSense, #productDetailCon #detailDescProd
+{float: left;}
+
+#productDetailCon #detailImg
+{
+	width: 300px;
+	height: auto;
+}
+
+#productDetailCon ul#detailDescSense
+{
+	width: 400px;
+	margin-top: 50px;
+}
+
+#productDetailCon ul#detailDescSense p
+{
+	font-family: Helvetica Neue;
+	font-size: 1.15em;
+	padding-bottom: 7.5px;
+	color: #808284;
+	display: block;
+	text-decoration: none;
+	text-align: left;
+}
+
+#productDetailCon ul#detailDescSense li#descSight p:before
+{
+	content:url("../img/eyeicon.jpg");
+	width: 23px;
+	height: 18px;
+	margin-right: 5px;
+}
+
+#productDetailCon ul#detailDescSense li#descSmell p:before
+{
+	content:url("../img/noseicon.jpg");
+	width: 23px;
+	height: 18px;
+	margin-right: 5px;
+}
+
+#productDetailCon ul#detailDescSense li#descTaste p:before
+{
+	content:url("../img/lips.jpg");
+	width: 23px;
+	height: 18px;
+	margin-right: 5px;
+}
+
+#productDetailCon #detailDescProd
+{
+	width: 372px;
+	margin-top: 35px;
+	margin-left: 28px;
+}
+
+#productDetailCon #detailDescProd #detailPerc, #productDetailCon #detailDescProd #detailAmount, #productDetailCon #detailDescProd #detailPrice
+{
+	float: left;
+	width: 124px;
+	text-align: left;
+}
+
+#productDetailCon #detailDescProd p
+{
+	font-family: Helvetica;
+	font-size: 1.15em;
+	color: #808284;
+}
+
+#productDetailCon input[type="submit"]
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Helvetica Neue;
+	font-size: 1em;
+	padding: 5px 7.5px;
+	border-radius: 40px;
+	border: 1px solid #45AADF;
+	color: #45AADF;
+	background-color: transparent;
+	cursor: pointer;
+	margin: 35px 0 0 28px;
+}
+
+header #logIn p
+{
+	font-size: 12px;
+	color: #FFF;
+	font-family: Helvetica Neue;
+}
+
+#productDetailCon p#cartError
+{
+	font-size: 12px;
+	margin-top: 45px;
+	font-family: Helvetica Neue;
+	color: #EF403E;
+	float: left;
+	margin-left: 5px;
+}
+
+#productDetailCon input[name="addToCart"] 
+{float: left;}
+
+ul#cart
+{
+	width: 250px;
+	margin: 0 auto;
+}
+
+ul#cart li
+{
+	height: 30px;
+	border-bottom: 1px solid #F1F1F2;
+}
+
+ul#cart li .productCartName, ul#cart li .productCartPrice, ul#cart #cartTotalProducts, ul#cart #cartTotalPrice
+{float:left;}
+
+ul#cart li .productCartName, ul#cart #cartTotalProducts
+{width:200px;}
+
+ul#cart li .productCartPrice, ul#cart #cartTotalPrice
+{width:50px; text-align: right;}
+
+ul#cart li .productCartName h2, ul#cart li .productCartPrice h2, ul#cart #cartTotalProducts h2, ul#cart #cartTotalPrice h2
+{
+	color: #808284;
+	line-height: 30px;
+}
+
+ul#cart #cartTotalProducts h2, ul#cart #cartTotalPrice h2
+{font-weight: bold; font-size: 1.05em;}
