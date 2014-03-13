@@ -1,0 +1,156 @@
+html
+{font-family: Helvetica Neue;}
+
+body
+{
+	background: url("../img/background.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+input
+{border: none; box-shadow: none; padding:none;}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder
+{
+	color: #B1B3B3;
+}
+
+#mainCon
+{
+	overflow: hidden;
+	height: 227px;
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	margin-top: -113.5px;
+	left: 50%;
+	margin-left: -475px;
+}
+
+#formCon
+{
+	background-color: #F4F5F6;
+	border-radius: 15px;
+	width:500px;
+	overflow: hidden;
+}
+
+ #wrapCon
+{
+	position: absolute;
+	top: 25%;
+	margin-top: 24px;
+	background-color: #F4F5F6;
+	border-radius: 15px;
+	width:450px;
+	overflow: hidden;
+}
+
+#formCon h1, #formCon h2
+{
+	font-size: 18px;
+	margin-left:50px;
+	margin-top: 25px;
+	padding-bottom:3px;
+	border-bottom: 1px #B1B3B3 solid;
+	width: 250px;
+	font-family: arial;
+}
+
+ #formCon h2
+ {
+ 	width: auto;
+ 	margin-top: 15px;
+ 	margin-bottom: 15px;
+ 	border: none;
+ 	padding-bottom:0;
+ }
+
+nav
+{
+	background-color: #2C2D2C;
+	width: 100%;
+	height:50px;
+
+}
+
+nav a
+{
+	float: right;
+	margin-right:15px;
+	line-height:50px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#introLanding
+{
+	margin-top: 50px;
+}
+
+#introLanding h1, #introLanding p
+{
+	font-family: Arial;
+	text-shadow: 1px 1px #000;
+	color: #fff;
+	font-size: 35px;
+}
+
+#introLanding p
+{
+	width: 400px;
+	font-size: 25px;
+	padding-top: 5px;
+}
+
+#introLanding, #formCon
+{
+	float: left;
+}
+
+#formCon
+{
+	margin-left: 100px;
+}
+
+#formCon form
+{
+	margin-left: 50px;
+	margin-top: 15px;
+}
+
+input[type="text"], input[type="password"]
+{
+	border: 1px solid #CCCCCB;
+	height: 22.5px;
+	width: 225px;
+	border-radius: 5px;
+	padding: 2px 0 2px 10px;
+	color: #000;
+	font-size: 16px;
+	margin-bottom: 7.5px;
+}
+
+input[type=submit]
+{
+	border: 1px solid #F89D2A;
+	cursor: pointer;
+	height: 26.5px;
+	text-align: center;
+	background-color: #FCBC2B;
+	color: #000;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 14px;
+	text-shadow: 1px 1px #fff;
+	width: 175px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
