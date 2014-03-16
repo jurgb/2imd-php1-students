@@ -1,0 +1,191 @@
+ul#productCon, ul#checkoutCon, header
+{
+	overflow: hidden;
+	width: 685px;
+	margin: 0 auto 0 auto;
+}
+
+header
+{
+	background-color: #d90200;
+	height: 60px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	width: 750px;
+}
+
+header #shopCompany{float:left;}
+
+header #shopCompany a
+{
+	background-image: url("../img/adobeLogo.png");
+	width: 150px;
+	height: 38px;
+	display: block;
+	text-indent: -9999px;
+	margin-top: 11px;
+	margin-left: 32px;
+}
+
+header #logIn
+{
+	float:right;
+	font-family: Helvetica Neue;
+	margin-top:20px;
+	margin-right:32px;
+}
+
+header #logIn input
+{border:none; box-shadow: none; height:20px;margin-right:2.5px;}
+
+header #logIn input[type="text"]
+{width:150px;padding-left:5px;}
+
+header #logIn input[type="submit"], header #logIn a
+{background-color:#a20100;color:#FFF;height:25px; width:60px;}
+
+header #logIn h1, header #logIn a
+{font-family: Helvetica Neue; float: left;}
+header #logIn h1
+{margin-top:2.5px; color: #FFF; margin-right: 10px;}
+header #logIn h1 span
+{font-weight:bold;}
+header #logIn a
+{
+	text-align: center;
+	text-decoration: none;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+ul#productCon li.productItem, ul#checkoutCon li.productItem
+{
+	width: 100%;
+	height: 74px;
+	border-bottom: 1px solid #FBFBFC;
+}
+
+ul#productCon li.productItem:last-child, ul#checkoutCon li.productItem:last-child
+{border-bottom: none}
+
+ul#productCon .pImage, ul#productCon .pInfo, ul#productCon .pPrice, ul#productCon .pSelect,
+ul#checkoutCon .pImage, ul#checkoutCon .pInfo, ul#checkoutCon .pPrice, ul#checkoutCon .pSelect
+{
+	float: left;
+	margin-left:10px;
+}
+
+ul#productCon .pImage, ul#checkoutCon .pImage
+{
+	width: 60px;
+	height: 60px;
+	margin-left:0px;
+	margin-top: 7.5px;
+}
+
+ul#productCon .pImage img,
+ul#checkoutCon .pImage img {width:100%;height:auto;}
+
+ul#productCon .pInfo, ul#checkoutCon .pInfo
+{
+	font-family: Helvetica Neue;
+	width: 475px;
+	margin-top: 17.5px;
+}
+
+ul#productCon .pInfo h1, ul#checkoutCon .pInfo h1 
+{
+	font-size: 18px;
+	padding-bottom:2.5px;
+}
+
+ul#productCon .pInfo p
+{
+	font-size: 14px;
+}
+
+ul#productCon .pPrice, ul#checkoutCon .pPrice
+{
+	margin-top: 7.5px;
+	height:60px;
+	width: 60px;
+}
+
+ul#productCon .pPrice h2, ul#checkoutCon .pPrice h2 {line-height:60px;font-weight:bold;}
+
+ul#productCon .pSelect
+{
+	margin-top: 7.5px;
+	height:60px;
+	width: 60px;
+}
+
+ul#productCon .pSelect input
+{
+	margin:0;
+	padding:0;
+	width: 20px;
+	height: 20px;
+	box-shadow: none;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+ul#productCon .pSelect input[type=checkbox]:checked
+{
+	background-color: green;
+}
+
+ul#productCon input[name="checkoutProducts"], ul#productCon input[name="submitProducts"],
+ul#checkoutCon input[name="checkoutProducts"], ul#checkoutCon input[name="submitProducts"]
+{
+	float: right;
+	margin-top: 25px;
+	font-family:  Helvetica Neue;
+	font-size: 17px;
+	color: #FFF;
+	box-shadow: none;
+	border: none;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	width:125px;
+	height:40px;
+	background: #9dd53a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9dd53a 0%, #80c217 75%, #a1d54f 100%, #7cbc0a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(75%,#80c217), color-stop(100%,#a1d54f), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9dd53a 0%,#80c217 75%,#a1d54f 100%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9dd53a 0%,#80c217 75%,#a1d54f 100%,#7cbc0a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9dd53a 0%,#80c217 75%,#a1d54f 100%,#7cbc0a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9dd53a 0%,#80c217 75%,#a1d54f 100%,#7cbc0a 100%); /* W3C */
+}
+
+ul#checkoutCon .pPrice
+{
+	margin-left: 80px;
+}
+
+#priceList, #amountList
+{
+	font-family: Helvetica Neue;
+	display: block;
+	float: left;
+	margin-top: 25px;
+	width: 342.5px;
+	text-align: right;
+}
+
+#amountList
+{
+	text-align: left;
+}
+
+#priceList span, #amountList span
+{font-weight: bold; font-family: none;}
+
+ul#productCon h3 
+ {
+	font-family: Helvetica Neue;
+	font-weight: bold;
+	text-align: right;
+	margin-top: 25px;
+ }
