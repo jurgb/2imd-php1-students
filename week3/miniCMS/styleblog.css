@@ -1,0 +1,43 @@
+/* stylesheet voor overzicht pagina van alle blogposts */
+
+body
+{
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#titel_overzichts
+{
+	color: #0C004A;
+	text-align: center;
+}
+
+#blogposts
+{
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #CCC;
+	padding: 25px;
+	border-radius: 25px;
+}
+
+#blogposts li
+{
+	list-style: none;
+	background-color: #BFBFBF;
+	padding: 5px;
+	margin: 5px;
+}
+
+#blogposts li h1
+{
+	text-align: center;
+	text-decoration: underline;
+}
+
+#blogposts li p
+{
+	padding-left: 5px;
+}

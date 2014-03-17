@@ -1,0 +1,34 @@
+/* CSS file voor Blog cms */
+
+#wrapper
+{
+	max-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#blogpost
+{
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #CCC;
+	border-radius: 25px;
+	padding: 25px;
+}
+
+#titel
+{
+	width: 100%;
+}
+
+#post
+{
+	margin-top: 15px;
+	width: 100%;
+}
+
+#submitknop
+{
+	width: 100px;
+}
