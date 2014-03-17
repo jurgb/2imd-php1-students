@@ -6,8 +6,8 @@
 			if (!empty($_POST['titel']) && !empty($_POST['post'])) {
 				
 				$blogpost = new Blogpost();
-				$blogpost->Title = $_POST['titel'];
-				$blogpost->Message = $_POST['post'];
+				$blogpost->Title = htmlspecialchars($_POST['titel']);
+				$blogpost->Message = htmlspecialchars($_POST['post']);
 				$blogpost->Save();
 
 				//header("location:overzicht.php");

@@ -2,8 +2,8 @@
 	class Db
 	{
 		private $m_sHost = "localhost";
-		private $m_sUser = "root";
-		private $m_sPassword = "";
+		private $m_sUser = "jurgb";
+		private $m_sPassword = "1308JuBa";
 		private $m_sDatabase = "php1";
 		public $conn;
 

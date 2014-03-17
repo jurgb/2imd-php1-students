@@ -1,6 +1,6 @@
 <?php
 		// De klasse blogpost
-
+		include_once("Db.class.php");
 		class blogpost
 		{
 			private $m_sTitle;
@@ -43,7 +43,7 @@
 
 			public function Save()
 			{
-				include_once("Db.class.php");
+				
 				$db = new Db();
 				$sql = "insert into tblBlogpost (Title, Message)
 							values(
@@ -51,6 +51,14 @@
 								'". $this->m_sMessage ."'
 								)";
 				$db->conn->query($sql);
+			}
+
+			public function Load()
+			{
+				$db = new Db();
+				$sql = "select * from tblBlogpost";
+				$result = $db->conn->query($sql);
+				return $result;
 			}
 		}
 ?>
