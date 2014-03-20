@@ -47,8 +47,8 @@
 				$db = new Db();
 				$sql = "insert into tblBlogpost (Title, Message)
 							values(
-								'". $this->m_sTitle ."',
-								'". $this->m_sMessage ."'
+								'". $db->conn->real_escape_string($this->m_sTitle) ."',
+								'". $db->conn->real_escape_string($this->m_sMessage) ."'
 								)";
 				$db->conn->query($sql);
 			}
